@@ -1,0 +1,23 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@genkit-ai/ai": "^0.5.4",
+    "@genkit-ai/core": "^0.5.4",
+    "@genkit-ai/dotprompt": "^0.5.4",
+    "@genkit-ai/flow": "^0.5.4",
+    "@genkit-ai/googleai": "^0.5.4",
+    "@genkit-ai/vertexai": "^0.5.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-tools": "^13.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}

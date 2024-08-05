@@ -1,0 +1,21 @@
+---
+model: googleai/gemini-1.5-pro-latest
+input:
+  schema:
+    theme: string
+output:
+  format: json
+  schema:
+    type: array
+    items: 
+      type: object
+      properties:
+        name:
+          type: string
+        price:
+          type: integer
+        ingredients:
+          type: array
+---
+
+Generate a menu item that could be found at a {{theme}} themed restaurant.

@@ -1,0 +1,27 @@
+---
+model: googleai/gemini-1.5-pro-latest
+config:
+  temperature: 0.9
+  max_tokens: 15000
+input:
+  schema:
+    information: string
+output:
+  format: json
+  schema:
+    type: array
+    items:
+      type: object
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
+      required:
+        - question
+        - answer
+---
+
+{{information}}
+
+You are to make a 20 item quiz, with several questions and their corresponding answers with the information above. Make sure the answers are only 1 to 5 words long only!
